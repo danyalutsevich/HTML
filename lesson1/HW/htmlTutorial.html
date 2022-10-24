@@ -6,58 +6,112 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Tutorial</title>
+
+    <style>
+        code {
+            background-color: #e7e7e7;
+            color: brown;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        
+        pre{
+            background-color: #e7e7e7;
+            color: brown;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+
+        }
+
+        a {
+            background-color: #e7e7e7;
+            color: darkcyan;
+
+        }
+
+        b{
+            color: black;
+        }
+
+        body {
+            width: 90vw;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+
 </head>
 
 <body>
-    <h2>HTML Tutorial</h2>
+    <h1>HTML Tutorial</h1>
+    <hr>
+    <h2>What is HTML?</h2>
+    <p>
 
-    What is HTML?
-
-    Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications.
-
-    Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia
-    web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance
-    of the document.
-
-    HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as
-    interactive forms may be embedded into the rendered page. HTML provides a means to create structured documents by
-    denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML
-    elements are delineated by tags, written using angle brackets. Tags such as <img /> and <input /> directly introduce
-    content into the page. Other tags such as <p> surround and provide information about document text and may include
-        other tags as sub-elements. Browsers do not display the HTML tags, but use them to interpret the content of the
+        <b>Hypertext Markup Language (<u>HTML</u>)</b> is the standard markup language for creating web pages and web
+        applications.
+        <br>
+        <br>
+        Web browsers receive <u>HTML</u> documents from a web server or from local storage and render the documents into
+        multimedia
+        web pages. <u>HTML</u> describes the structure of a web page semantically and originally included cues for the
+        appearance
+        of the document.
+        <br>
+        <br>
+        <u>HTML</u> elements are the building blocks of <u>HTML</u> pages. With <u>HTML</u> constructs, images and other
+        objects such as
+        interactive forms may be embedded into the rendered page. <u>HTML</u> provides a means to create structured
+        documents
+        by
+        denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items.
+        <u>HTML</u>
+        elements are delineated by tags, written using angle brackets. Tags such as <code>&ltimg&gt</code> and
+        <code>&ltinput&gt</code> directly
+        introduce
+        content into the page. Other tags such as
+        <code>&ltp&gt</code> surround and provide information about document text and may include
+        other tags as sub-elements. Browsers do not display the <u>HTML</u> tags, but use them to interpret the content
+        of the
         page.
+        <br>pre
+        <br>
+        <hr>
+    <h2>Markup</h2>
 
-        Markup
+    <u>HTML</u> markup consists of several key components, including those called <i>tags (and their attributes)</i>,
+    character-based <i>data types, character references</i> and <i>entity references</i>. <u>HTML</u> tags most commonly
+    come in
+    pairs
+    like
+    <code>&lth1&gt</code> and <code>&lt/h1&gt</code>, although some represent empty elements and so are unpaired, for
+    example <code>&ltimg&gt</code>. The first tag in such
+    a pair is the <i>start tag</i>, and the second is the <i>end tag</i> (they are also called <i>opening tags</i> and
+    <i>closing tags</i>).
 
-        HTML markup consists of several key components, including those called tags (and their attributes),
-        character-based data types, character references and entity references. HTML tags most commonly come in pairs
-        like
-    <h1> and </h1>, although some represent empty elements and so are unpaired, for example <img>. The first tag in such
-    a pair is the start tag, and the second is the end tag (they are also called opening tags and closing tags).
-
-    Another important component is the HTML document type declaration, which triggers standards mode rendering.
+    Another important component is the <u>HTML</u> <i>document type declaration</i>, which triggers standards mode
+    rendering.
 
     The following is an example of the classic "Hello, World!" program:
-    <code> 
+    </p>
+    <pre>
 
-            <pre>
-                <!DOCTYPE html>
-            </pre>
+        &lt!DOCTYPE html&gt
+        &lthtml&gt
+            &lthead&gt
+                &lttitle&gt<b>This is a title</b>&lt/title&gt
+            &lt/head&gt
 
-        <html>
+            &ltbody&gt
+                &ltp&gt<b>Hello world!</b>&lt/p&gt
+            &lt/body&gt
 
-        <head>
-            <title>This is a title</title>
-        </head>
+        &lt/html&gt
+    </pre>
 
-        <body>
-            <p>Hello world!</p>
-        </body>
-
-        </html>
-    </code>
-
-    Tags: CodingScripting head HTML Introduction to HTML Landing Links semantics Structure Text
+    <b>Tags:</b> <a>CodingScripting</a> <a>head</a> <a>HTML</a> <a>Introduction to HTML</a> <a>Landing</a> <a>Links
+        semantics</a> <a>Structure Text</a>
 </body>
 
 </html>
