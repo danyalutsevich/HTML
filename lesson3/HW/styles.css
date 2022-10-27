@@ -1,0 +1,61 @@
+*{
+    margin: 0px;
+}
+
+.task1{
+    background-color: #f08080;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+.task1 li {
+    margin: 10px;
+    background-color: #c06666;
+}    
+
+.task1 li a{
+    background-color: #924c4c;
+}
+
+.task2{
+    background-color: #b9b9b9;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    position: relative;
+}
+
+
+.task2 li:nth-child(even){
+    background-color: #52acff;  
+}
+.task2 li:nth-child(odd){
+    background-color: #a0d1ff;
+}
+
+.task2 li::after{
+    content: " x";
+    color: red;
+}
+.task2 .done{
+    list-style: url("./icons/checked_16.png");
+    background-color: #8f8f8f!important;
+}
+
+.task2 .todo{
+    list-style: url("./icons/unchecked_16.png");
+    
+}
+
+.task3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.task3 a{
+    color: #0000ff;
+    text-decoration: none;
+}
+
