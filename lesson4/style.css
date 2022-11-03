@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+}
+.back {
+    font-size: 40px;
+    background-image: url('https://www.tubefilter.com/wp-content/uploads/2018/01/white-noise-1920x1131.jpg');
+    background-attachment: fixed;
+    /* opacity: 0.8; */
+    background-size: contain;
+    /* filter: brightness(220320230230320); */
+    /* filter: hue-rotate(900deg); */
+    /* filter: saturate(1000%); */
+    /* background-repeat: repeat; */
+    /* position: fixed; */
+    /* height: 100vh; */
+    /* width: 100vw; */
+    /* position: absolute; */
+    /* z-index: -1; */
+    filter: blur(1px);
+    /* filter: invert(); */
+}
+
+p {
+    filter: saturate(1200%);
+    font-size: 30px;
+    text-align: center;
+
+    color:rgb(255, 0, 191)
+}
