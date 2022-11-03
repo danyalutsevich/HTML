@@ -141,3 +141,49 @@ footer{
     padding: 10px;
     margin: 10px;
 }
+
+.task4  {
+    margin: 10px;
+    color: white;
+}
+
+.task4 .Content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.task4 .links{
+    display: flex;
+    flex-direction: column;
+}
+
+.task4 hr{
+    border-top: 1px solid white;
+}
+
+.task4 a{
+    text-decoration: none;
+    color: white;
+    margin: 3px;
+}
+
+.task4 a:hover{
+    text-decoration: underline;
+}
+
+.task4 .footer{
+    text-align: center;
+}
+
+.task4 img{
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    filter: grayscale(100%);
+}
+
+.task4 img:hover{
+    transition: 500ms;
+    filter: grayscale(0%);
+}
