@@ -13,7 +13,6 @@ body {
     text-align: center;
     background-color: #f5f5f5;
     padding: 20px;
-    margin: 20px;
 }
 
 .task1 h1 {
@@ -38,7 +37,7 @@ body {
 
 .item p {
 
-    padding: 5px;
+    /* padding: 5px; */
 }
 
 .item img {
@@ -47,9 +46,17 @@ body {
     margin: 10px;
 }
 
+.task2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .task2 .menuItem {
     display: flex;
     align-items: center;
+    font-weight: 700;
+    font-size: 40px;
     background-color: rgb(238, 42, 107);
     width: 400px;
     height: 100px;
@@ -60,10 +67,11 @@ body {
     background-color: rgb(228, 1, 1);
 }
 
-.task2 span,
-p {
+.task2 .menuItem div,
+.task2 .menuItem p {
     text-transform: capitalize;
-    margin: 30px;
+    font-size: 40px;
+    margin-left: 20px;
 }
 
 .task3 {
@@ -87,12 +95,12 @@ header h2 {
 
 .task3 .content {
     display: flex;
-    margin: 10px;
+    /* margin: 10px; */
 }
 
 .left {
     width: 30%;
-    margin: 10px;
+    margin: 0 10px 10px 10px;
 }
 
 .left h2 {
@@ -108,12 +116,11 @@ header h2 {
 .main {
     width: 60%;
     background-color: #e7556d;
-    margin: 10px;
+    margin: 0 10px 10px 10px;
 }
 
 .main h2 {
     background-color: #e7556d;
-    margin: 10px;
     padding: 10px;
 }
 
@@ -125,8 +132,8 @@ header h2 {
 
 .right {
     width: 10%;
+    margin: 0 10px 10px 10px;
     background-color: #bb344a;
-    margin: 10px;
     writing-mode: vertical-lr;
     text-orientation: upright;
     text-align: center;
@@ -143,8 +150,9 @@ footer{
 }
 
 .task4  {
-    margin: 10px;
-    color: white;
+    color: black;
+    background-color: #00ff15;
+    padding: 10px;
 }
 
 .task4 .Content{
@@ -159,12 +167,11 @@ footer{
 }
 
 .task4 hr{
-    border-top: 1px solid white;
+    border: 1px solid black;
 }
 
 .task4 a{
     text-decoration: none;
-    color: white;
     margin: 3px;
 }
 
@@ -180,10 +187,13 @@ footer{
     height: 30px;
     width: 30px;
     margin: 10px;
-    filter: grayscale(100%);
+    filter: blur(10px);
+    transition: 500ms;
+    /* filter: contrast(100000); */
+    /* filter: grayscale(100%); */
 }
 
 .task4 img:hover{
     transition: 500ms;
-    filter: grayscale(0%);
+    filter: blur(0px);
 }
