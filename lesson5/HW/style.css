@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+
+.task1 .Clock {
+    width: 40vw;
+    height: 40vw;
+    margin: 30px;
+    border: 6px solid rgb(255, 28, 217);
+    border-radius: 50%;
+    background-color: rgb(0, 4, 255);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.task1 .Clock .Hour {
+    width: 30%;
+    height: 5px;
+    background-color: rgb(241, 1, 161);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0 50%;
+    transform: rotate(-20deg);
+    z-index: 1;
+    animation: time 60s infinite linear;
+}
+
+.task1 .Clock .Minute {
+    width: 40%;
+    height: 3px;
+    background-color: rgb(255, 72, 185);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0 50%;
+    transform: rotate(0deg);
+    z-index: 1;
+    animation: time 1s infinite linear;
+}
+
+.task1 .Clock .Second {
+    width: 50%;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0 50%;
+    transform: rotate(0deg);
+    z-index: 1;
+    animation: time 15.83ms infinite linear;
+}
+
+@keyframes time {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.task1 .Clock .Center {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(255, 28, 168);
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.task2 .window {
+    width: 800px;
+    height: 500px;
+    margin: 50px;
+    background-color: #00000000;
+    position: relative;
+    --playState: paused;
+}
+
+.task2 h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 0, 0);
+    font-size: 50px;
+    font-weight: 700;
+    z-index: -2;
+}
+
+.task2 .window:hover {
+    --animL: windowLeft 1s forwards;
+    --animR: windowRight 1s forwards;
+}
+
+.task2 .left {
+    background-color: rgb(255, 59, 196);
+    border: 3px solid rgb(122, 30, 95);
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    transform-origin: 0%;
+    animation: var(--animL);
+}
+
+.task2 .right {
+    background-color: rgb(255, 59, 196);
+    border: 3px solid rgb(122, 30, 95);
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    transform-origin: 100%;
+    animation: var(--animR);
+}
+
+@keyframes windowLeft {
+
+    to {
+        transform: perspective(1000px) rotateY(50deg);
+    }
+}
+
+@keyframes windowRight {
+
+    to {
+        transform: perspective(1000px) rotateY(-50deg);
+    }
+}
+
+
+.task3 {
+    width: 90vw;
+    height: 800px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    --backSize: 400px;
+}
+
+.task3 .block {
+    width: 60vw;
+    height: 33%;
+    display: flex;
+}
+
+.task3 .block:hover {
+    opacity: 0.5;
+    transition: 0.3s;
+    --backSize: 600px;
+}
+
+.text {
+    width: 50%;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    background-image: url(https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?fit=476%2C280&ssl=1);
+    background-size: var(--backSize);
+    transition: 1s;
+    -ms-transform-origin-x: 50%;
+    -ms-transform-origin-y: 50%;
+    width: 50%;
+    background-color: blue;
+}

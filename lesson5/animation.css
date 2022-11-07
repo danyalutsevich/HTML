@@ -1,0 +1,55 @@
+* {
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    animation: 1s linear 0s infinite alternate Tanimation;
+}
+
+.round {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+    animation: 1s linear 0s infinite alternate sun-rise;
+    position: absolute;
+    z-index: 1;
+}
+
+.T {
+    animation: 4s cubic-bezier(0.075, 0.82, 0.165, 1) 0s infinite alternate Tanimation;
+    position: absolute;
+    z-index: 2;
+    color: blue;
+}
+
+
+@keyframes sun-rise {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(10);
+    }
+}
+
+@keyframes Tanimation {
+
+    to {
+        transform: scale(1) rotate(360deg) rotate3d(100, 100, 100, 3600deg);
+        filter: blur(0px) hue-rotate(0deg) saturate(1) drop-shadow(100px 100px 100px black);
+    }
+    
+    from {
+        transform: scale(10);
+        filter: blur(0.1px) hue-rotate(360deg) saturate(10);
+    }
+
+}
