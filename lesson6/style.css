@@ -1,0 +1,31 @@
+* {
+    margin: 0px;
+}
+
+.task1 table {
+    background-color: pink;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.task1 td {
+    
+    padding: 10px 20px;
+    border: 0px;
+    
+}
+
+.task1 tbody tr:nth-child(odd){
+    background-color: rgba(0, 17, 255, 0.226);
+}
+
+.task1 button{
+    /* background-color: blueviolet; */
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+
+table td:nth-child(even){
+    background-color: rgba(255, 0, 0, 0.342);
+}
