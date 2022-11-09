@@ -3,23 +3,44 @@
 }
 
 .task1 table {
-    background-color: pink;
+    background-color: rgb(190, 190, 190);
     font-family: Arial, Helvetica, sans-serif;
     text-transform: capitalize;
     text-align: center;
     border-radius: 10px;
+    border-collapse: separate;
+    border-spacing: 0px;
+}
+
+
+
+
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+thead td{
+    color: white;
 }
 
 .task1 td {
-    border-radius: 10px;
+    /* border-radius: 10px; */
     
     padding: 10px 20px;
     border: 0px;
     
 }
 
+.task1 td:first-child {
+    padding-right:10px;
+
+}
+
 .task1 tbody tr:nth-child(odd){
-    background-color: rgba(0, 17, 255, 0.226);
+    background-color: rgba(107, 107, 107, 0.342);
 }
 
 .task1 button{
@@ -31,5 +52,26 @@
 }
 
 table td:nth-child(even){
-    background-color: rgba(255, 0, 0, 0.342);
+    background-color: rgba(107, 107, 107, 0.342);
 }
+
+thead td:nth-child(1){
+    background-color: #7887ab;
+}
+
+thead td:nth-child(2){
+    background-color: #4f628e;
+}
+
+thead td:nth-child(3){
+    background-color: #2e4172;
+}
+
+thead td:nth-child(4){
+    background-color: #162955;
+}
+
+thead td:nth-child(5){
+    background-color: #061539;
+}
+
