@@ -1,0 +1,212 @@
+* {
+    margin: 0px;
+}
+
+.task1 {
+    background-color: rgb(0, 80, 80);
+    padding: 40px;
+}
+
+.task1 .breadcrumbs ol {
+    display: flex;
+    padding: 0px;
+    list-style: "/";
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.task1 .breadcrumbs ol li {
+    margin: 5px;
+    color: rgb(126, 126, 126);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.task1 .breadcrumbs ol li a {
+    text-decoration: none;
+    color: rgb(126, 126, 126);
+}
+
+.task1 .breadcrumbs ol li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.task1 .title {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 0px;
+    width: 80vw;
+}
+
+.about {
+    display: flex;
+}
+
+.about img {
+    height: 100px;
+}
+
+.about .description {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.about .description article {
+    margin: 20px;
+    width: 250px;
+}
+
+.about .description article h1 {
+    color: white;
+}
+
+.about .description article p {
+    color: rgb(126, 126, 126);
+}
+
+.task2 {
+    background-color: rgb(244, 247, 239);
+    padding: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.task2 h1 {
+    margin: 10px 0;
+}
+
+.task2 p {
+    margin: 10px 0;
+}
+
+.task2 .intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.task2 .hat {
+    width: 50%;
+}
+
+.task2 .image {
+    margin: 10px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.task2 .image img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+
+.task2 .image p {
+    background-color: rgb(0, 44, 80);
+    color: white;
+    margin: 0px;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+.task3 {
+    background-color: rgb(255, 254, 241);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.task3 header img {
+    height: 50px;
+    background-color: black;
+    border: 0px;
+    border-radius: 10000px;
+}
+
+.task3 header section h1 {
+    margin: 10px;
+}
+
+.task3 header section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.task3 header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.task3 .content {
+    display: flex;
+    /* flex-direction: column; */
+    /* padding: 10px 0; */
+    width: 100%;
+}
+
+.task3 .menu{
+    width: 150px;
+    padding: 10px;
+}
+
+.task3 .inbox{
+    width: 80%;
+
+    padding: 10px;
+}
+
+.task3 .menu .option {
+    display: flex;
+    padding: 10px;
+    font-size: 24px;
+    align-items: center;
+}
+
+.task3 .menu .option:hover {
+    cursor: pointer;
+    background-color: rgb(255, 151, 151);
+}
+
+.task3 .incoming {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* padding: 10px; */
+}
+
+.task3 .mail {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.task3 .mail .from {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.subject {
+    white-space: nowrap;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.mailText {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30%;
+    text-overflow: ellipsis;
+}
+
+.task3 .mail .date {
+    font-size: 14px;
+    margin: 10px;
+}
