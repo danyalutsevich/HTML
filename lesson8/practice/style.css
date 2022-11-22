@@ -1,0 +1,38 @@
+.blog{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.photo{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+
+}
+
+.h100{
+    height: 100px;
+
+}
+
+.h150{
+    height: 150px;
+}
+
+.h200{
+    height: 220px;
+}
+
+
+
+
+
+
+
+
+
+
