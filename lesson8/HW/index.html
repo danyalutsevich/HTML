@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./images/sushi.png">
+    <title>Sushi</title>
+</head>
+
+<body>
+    <div class="sushi">
+
+        <form class="order" action="#">
+            <img src="./images/sushi.png" alt="Sushi icon">
+            <input name="name" placeholder="Name">
+            <input name="adress" placeholder="Adress">
+            <input name="phoneNumber" inputmode="tel" placeholder="Phone number">
+            <input name="email" type="email" placeholder="Email">
+            <input name="qtyOfChopsticks" type="number" placeholder="QTY of ChopSticks">
+            <select name="typeOfChopsticks">
+                <option>Type of chopsticks</option>
+                <option>Training</option>
+                <option>Usual</option>
+            </select>
+            <div>
+                <input name="napkins" id="napkins" type="checkbox" placeholder="Napkins">
+                <label for="napkins">Napkins</label>
+            </div>
+            <select name="product">
+                <option>Product</option>
+                <option>Philadelphia</option>
+                <option>California</option>
+                <option>Vasabi</option>
+                <option>Additional Chop Sticks</option>
+            </select>
+            <input name="comment" placeholder="Comment">
+            <input type="submit" value="Confirm Order"></button>
+        </form>
+
+    </div>
+
+    <div class="register">
+        <form class="register" actio="#">
+            <input placeholder="Name" name="name">
+            <input placeholder="Email" type="email" name="email">
+            <input placeholder="Date of birth" type="date" name="dateOfBirth">
+            <select name="sex">
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+            <select name="contry" type="country">
+                <option>Poland</option>
+                <option>Nigeria</option>
+                <option>Barbados</option>
+                <option>Portugal</option>
+                <option>Brazil</option>
+                <option>Cuba</option>
+            </select>
+            <div>
+                <label for="expirience">Years of game expirience</label>
+                <input id="expirience" max="60" min="0" type="number">
+            </div>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+
+
+</body>
+
+</html>
